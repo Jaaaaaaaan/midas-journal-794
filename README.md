@@ -1,8 +1,10 @@
 # Description
 
 This repository contains modified source files of the VascuSynth software [1][2] that I used during my undergraduate thesis at NCT TSO Dresden.
-Changes include support for generating multiple non-intersecting vascular trees in a shared volume, simple parallelization, and basic documentation of all functions.
-In addition, the modified software exports information on maximal bounding boxes of vessel branches.
+Additional modifications were made as part of a student assistant position at NCT TSO Dresden.
+
+Differences to the original VascuSynth source code include support for generating multiple non-intersecting vascular trees in a shared volume, simple parallelization, and basic documentation of all functions.
+In addition, the modified software exports information on maximal bounding boxes for vessel branches.
 Based on this information, I was able to generate 3D models of non-intersecting, curved vessel trees with the help of a Python wrapper.
 The `TreeDrawer` class from the original project was removed in order to allow for compilation without the ITK library.
 
@@ -10,7 +12,7 @@ The syntax used to call the program is similar to the one in the original VascuS
 ```
 VascuSynth [oxygenDemandMap] [supplyMap] [randomSeed] [paramFile 1] ... [paramFile N]
 ```
-For more information on the contents of the map and parameter files, see Ref. [1] as well as the `VascuSynth.cpp` file
+For more information on the contents of the map and parameter files, see Ref. [1] as well as the `VascuSynth.cpp` file.
 
 # Installation
 
